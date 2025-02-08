@@ -1,4 +1,5 @@
-FROM openjdk:19
+FROM openjdk:17-jdk-alpine
+WORKDIR /app
+COPY target/*.jar welcome.jar
 EXPOSE 8080
-ADD target/welcome.jar welcome.jar
-ENTRYPOINT ["java","-jar","/welcome.jar"]
+ENTRYPOINT ["java", "-jar", "welcome.jar"]
