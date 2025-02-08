@@ -10,6 +10,6 @@ public class WelcomeController {
 
     @GetMapping
     public String getWelcome (){
-        return "Welcome to learn Github Action";
+        return "Welcome to learn Google Cloud";
     }
 }
